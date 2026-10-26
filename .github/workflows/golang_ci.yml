@@ -17,113 +17,109 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-ci
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure cache
+        uses: namespacelabs/nscloud-cache-action@58bf6e08898e88803c098e2b522668541cd3b2e3 # v1
+        with:
+          cache: |
+            go
+            mise
+
       - name: Use Mise
         uses: ./.github/actions/use-mise
-
-      - name: Use Caches
-        uses: actions/cache@v4
         with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: go-${{ runner.os }}-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            go-${{ runner.os }}-
+          cache: "false"
 
       - run: mise run build
 
   test:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-ci
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure cache
+        uses: namespacelabs/nscloud-cache-action@58bf6e08898e88803c098e2b522668541cd3b2e3 # v1
+        with:
+          cache: |
+            go
+            mise
+
       - name: Use Mise
         uses: ./.github/actions/use-mise
-
-      - name: Use Caches
-        uses: actions/cache@v4
         with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: go-${{ runner.os }}-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            go-${{ runner.os }}-
+          cache: "false"
 
       - run: mise run test
 
   lint:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-ci
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Mise
-        uses: ./.github/actions/use-mise
-
-      - name: Use Caches
-        uses: actions/cache@v4
+      - name: Configure cache
+        uses: namespacelabs/nscloud-cache-action@58bf6e08898e88803c098e2b522668541cd3b2e3 # v1
         with:
           path: |
-            ~/.cache/go-build
             ~/.cache/golangci-lint
-            ~/go/pkg/mod
-          key: golangci-${{ runner.os }}-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            golangci-${{ runner.os }}-
+          cache: |
+            go
+            mise
+
+      - name: Use Mise
+        uses: ./.github/actions/use-mise
+        with:
+          cache: "false"
 
       - run: mise run lint
 
   integration:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-ci
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure cache
+        uses: namespacelabs/nscloud-cache-action@58bf6e08898e88803c098e2b522668541cd3b2e3 # v1
+        with:
+          cache: |
+            go
+            mise
+
       - name: Use Mise
         uses: ./.github/actions/use-mise
-
-      - name: Use Caches
-        uses: actions/cache@v4
         with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: go-${{ runner.os }}-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            go-${{ runner.os }}-
+          cache: "false"
 
       - run: mise run test-integration
 
   docs:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-ci
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure cache
+        uses: namespacelabs/nscloud-cache-action@58bf6e08898e88803c098e2b522668541cd3b2e3 # v1
+        with:
+          cache: |
+            go
+            mise
+
       - name: Use Mise
         uses: ./.github/actions/use-mise
-
-      - name: Use Caches
-        uses: actions/cache@v4
         with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: go-${{ runner.os }}-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            go-${{ runner.os }}-
+          cache: "false"
 
       - run: mise run gen-docs
 
