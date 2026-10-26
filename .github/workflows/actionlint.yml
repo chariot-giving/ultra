@@ -17,13 +17,20 @@ concurrency:
 
 jobs:
   actionlint:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-ci-small
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure cache
+        uses: namespacelabs/nscloud-cache-action@58bf6e08898e88803c098e2b522668541cd3b2e3 # v1
+        with:
+          cache: mise
+
       - name: Use Mise
         uses: ./.github/actions/use-mise
+        with:
+          cache: "false"
 
       - run: mise run lint-actions
