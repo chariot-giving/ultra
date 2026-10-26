@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/harrisoncramer/ultra/internal/resolve"
+	"github.com/chariot-giving/ultra/internal/resolve"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"

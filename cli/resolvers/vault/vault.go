@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/harrisoncramer/ultra/cli"
-	"github.com/harrisoncramer/ultra/internal/xstring"
+	"github.com/chariot-giving/ultra/cli"
+	"github.com/chariot-giving/ultra/internal/xstring"
 
 	"github.com/spf13/pflag"
 )

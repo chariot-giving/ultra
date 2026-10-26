@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	scan "github.com/harrisoncramer/ultra/internal/scan"
+	scan "github.com/chariot-giving/ultra/internal/scan"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

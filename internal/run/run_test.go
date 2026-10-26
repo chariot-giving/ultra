@@ -7,11 +7,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/harrisoncramer/ultra/internal/compose"
-	"github.com/harrisoncramer/ultra/internal/configreader"
-	"github.com/harrisoncramer/ultra/internal/gen"
-	"github.com/harrisoncramer/ultra/internal/project"
-	"github.com/harrisoncramer/ultra/internal/resolve"
+	"github.com/chariot-giving/ultra/internal/compose"
+	"github.com/chariot-giving/ultra/internal/configreader"
+	"github.com/chariot-giving/ultra/internal/gen"
+	"github.com/chariot-giving/ultra/internal/project"
+	"github.com/chariot-giving/ultra/internal/resolve"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

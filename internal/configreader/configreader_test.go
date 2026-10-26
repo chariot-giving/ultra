@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/harrisoncramer/ultra/internal/project"
+	"github.com/chariot-giving/ultra/internal/project"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

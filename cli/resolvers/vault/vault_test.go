@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/harrisoncramer/ultra/cli"
+	"github.com/chariot-giving/ultra/cli"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -7,7 +7,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/harrisoncramer/ultra/cli"
+	"github.com/chariot-giving/ultra/cli"
 
 	"github.com/spf13/pflag"
 )

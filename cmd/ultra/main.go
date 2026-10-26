@@ -3,11 +3,11 @@ package main
 import (
 	"os"
 
-	"github.com/harrisoncramer/ultra/cli"
+	"github.com/chariot-giving/ultra/cli"
 
-	_ "github.com/harrisoncramer/ultra/cli/resolvers/aws"
-	_ "github.com/harrisoncramer/ultra/cli/resolvers/onepassword"
-	_ "github.com/harrisoncramer/ultra/cli/resolvers/vault"
+	_ "github.com/chariot-giving/ultra/cli/resolvers/aws"
+	_ "github.com/chariot-giving/ultra/cli/resolvers/onepassword"
+	_ "github.com/chariot-giving/ultra/cli/resolvers/vault"
 )
 
 func main() {

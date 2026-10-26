@@ -1,6 +1,6 @@
 package cli
 
-import "github.com/harrisoncramer/ultra/internal/resolve"
+import "github.com/chariot-giving/ultra/internal/resolve"
 
 // The resolver API is re-exported from internal/resolve so a custom build can add
 // its own backend: import this package, register a resolver, and call Execute.

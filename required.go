@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/harrisoncramer/ultra/internal/xstring"
+	"github.com/chariot-giving/ultra/internal/xstring"
 )
 
 // requiredTag names the struct tag that declares which environments a field is

@@ -44,7 +44,7 @@ func prepareTemplate(repoRoot, name, dir string) error {
 	if err := copyTree(filepath.Join("testdata", name), dir); err != nil {
 		return err
 	}
-	if out, err := runGo(dir, "mod", "edit", "-replace", "github.com/harrisoncramer/ultra="+repoRoot); err != nil {
+	if out, err := runGo(dir, "mod", "edit", "-replace", "github.com/chariot-giving/ultra="+repoRoot); err != nil {
 		return fmt.Errorf("mod edit %s: %w\n%s", name, err, out)
 	}
 	if out, err := runGo(dir, "mod", "tidy"); err != nil {
