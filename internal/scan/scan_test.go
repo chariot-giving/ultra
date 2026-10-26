@@ -6,12 +6,12 @@ import (
 	"testing"
 
 	"github.com/caarlos0/env/v10"
-	"github.com/harrisoncramer/ultra/internal/testdata/scan/composed"
-	"github.com/harrisoncramer/ultra/internal/testdata/scan/crosspkg"
-	"github.com/harrisoncramer/ultra/internal/testdata/scan/flat"
-	"github.com/harrisoncramer/ultra/internal/testdata/scan/prefixed"
-	"github.com/harrisoncramer/ultra/internal/testdata/scan/scoped"
-	"github.com/harrisoncramer/ultra/internal/testdata/scan/unexported"
+	"github.com/chariot-giving/ultra/internal/testdata/scan/composed"
+	"github.com/chariot-giving/ultra/internal/testdata/scan/crosspkg"
+	"github.com/chariot-giving/ultra/internal/testdata/scan/flat"
+	"github.com/chariot-giving/ultra/internal/testdata/scan/prefixed"
+	"github.com/chariot-giving/ultra/internal/testdata/scan/scoped"
+	"github.com/chariot-giving/ultra/internal/testdata/scan/unexported"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -286,7 +286,7 @@ type importPathCase struct {
 
 func TestConfigImportPath(t *testing.T) {
 	cases := []importPathCase{
-		{"flat fixture import path", "flat", "github.com/harrisoncramer/ultra/internal/testdata/scan/flat"},
+		{"flat fixture import path", "flat", "github.com/chariot-giving/ultra/internal/testdata/scan/flat"},
 	}
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {

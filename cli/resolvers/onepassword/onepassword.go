@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/harrisoncramer/ultra/cli"
+	"github.com/chariot-giving/ultra/cli"
 
 	"github.com/spf13/pflag"
 )

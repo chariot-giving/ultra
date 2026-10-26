@@ -11,9 +11,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/harrisoncramer/ultra/internal/compose"
-	"github.com/harrisoncramer/ultra/internal/configreader"
-	"github.com/harrisoncramer/ultra/internal/project"
+	"github.com/chariot-giving/ultra/internal/compose"
+	"github.com/chariot-giving/ultra/internal/configreader"
+	"github.com/chariot-giving/ultra/internal/project"
 )
 
 // DefaultOutputName is the combined compose file gen writes when no name is

@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/harrisoncramer/ultra/internal/appcheck"
-	"github.com/harrisoncramer/ultra/internal/project"
-	"github.com/harrisoncramer/ultra/internal/resolve"
-	"github.com/harrisoncramer/ultra/internal/scan"
+	"github.com/chariot-giving/ultra/internal/appcheck"
+	"github.com/chariot-giving/ultra/internal/project"
+	"github.com/chariot-giving/ultra/internal/resolve"
+	"github.com/chariot-giving/ultra/internal/scan"
 
 	"golang.org/x/sync/errgroup"
 )

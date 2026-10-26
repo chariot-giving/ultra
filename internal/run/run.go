@@ -13,10 +13,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/harrisoncramer/ultra/internal/compose"
-	"github.com/harrisoncramer/ultra/internal/gen"
-	"github.com/harrisoncramer/ultra/internal/project"
-	"github.com/harrisoncramer/ultra/internal/resolve"
+	"github.com/chariot-giving/ultra/internal/compose"
+	"github.com/chariot-giving/ultra/internal/gen"
+	"github.com/chariot-giving/ultra/internal/project"
+	"github.com/chariot-giving/ultra/internal/resolve"
 
 	"golang.org/x/sync/errgroup"
 )

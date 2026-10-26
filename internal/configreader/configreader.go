@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/harrisoncramer/ultra/internal/compose"
-	"github.com/harrisoncramer/ultra/internal/project"
+	"github.com/chariot-giving/ultra/internal/compose"
+	"github.com/chariot-giving/ultra/internal/project"
 )
 
 // scanner reports the secret env-var names an app's Config declares.

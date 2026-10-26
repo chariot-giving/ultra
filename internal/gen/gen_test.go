@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/harrisoncramer/ultra/internal/compose"
-	"github.com/harrisoncramer/ultra/internal/configreader"
-	"github.com/harrisoncramer/ultra/internal/project"
+	"github.com/chariot-giving/ultra/internal/compose"
+	"github.com/chariot-giving/ultra/internal/configreader"
+	"github.com/chariot-giving/ultra/internal/project"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

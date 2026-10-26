@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/harrisoncramer/ultra/cli"
+	"github.com/chariot-giving/ultra/cli"
 
-	_ "github.com/harrisoncramer/ultra/cli/resolvers/aws"
-	_ "github.com/harrisoncramer/ultra/cli/resolvers/onepassword"
-	_ "github.com/harrisoncramer/ultra/cli/resolvers/vault"
+	_ "github.com/chariot-giving/ultra/cli/resolvers/aws"
+	_ "github.com/chariot-giving/ultra/cli/resolvers/onepassword"
+	_ "github.com/chariot-giving/ultra/cli/resolvers/vault"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"

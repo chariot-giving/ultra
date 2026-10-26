@@ -13,8 +13,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/harrisoncramer/ultra/internal/xmap"
-	"github.com/harrisoncramer/ultra/internal/xstring"
+	"github.com/chariot-giving/ultra/internal/xmap"
+	"github.com/chariot-giving/ultra/internal/xstring"
 	"golang.org/x/tools/go/packages"
 )
 

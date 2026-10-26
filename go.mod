@@ -1,4 +1,4 @@
-module github.com/harrisoncramer/ultra
+module github.com/chariot-giving/ultra
 
 go 1.27.3
 

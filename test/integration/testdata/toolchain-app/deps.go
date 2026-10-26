@@ -1,3 +1,3 @@
 package ultraittoolchain
 
-import _ "github.com/harrisoncramer/ultra"
+import _ "github.com/chariot-giving/ultra"

@@ -2,15 +2,15 @@
 
 ## Writing a custom secret resolver
 
-You don't fork ultra to add a backend. Import `github.com/harrisoncramer/ultra/cli`, register a secret resolver, and call `cli.Execute` from your own `main` function.
+You don't fork ultra to add a backend. Import `github.com/chariot-giving/ultra/cli`, register a secret resolver, and call `cli.Execute` from your own `main` function.
 
 The built-in resolvers live in their own subpackages under `cli/resolvers` and register themselves when imported. The default `ultra` binary blank-imports all of them, but a custom `main` can import only the ones it needs, so a binary carries just those backends and their dependencies. Importing only 1password, for example, leaves the AWS SDK out of the build entirely.
 
 ```go
 import (
-	"github.com/harrisoncramer/ultra/cli"
+	"github.com/chariot-giving/ultra/cli"
 
-	_ "github.com/harrisoncramer/ultra/cli/resolvers/onepassword"
+	_ "github.com/chariot-giving/ultra/cli/resolvers/onepassword"
 )
 ```
 
@@ -23,7 +23,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/harrisoncramer/ultra/cli"
+	"github.com/chariot-giving/ultra/cli"
 
 	"github.com/spf13/pflag"
 )

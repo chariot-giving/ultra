@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/harrisoncramer/ultra/actions/workflows/golang_ci.yml"><img src="https://github.com/harrisoncramer/ultra/actions/workflows/golang_ci.yml/badge.svg" alt="CI" /></a>
-  <a href="https://pkg.go.dev/github.com/harrisoncramer/ultra"><img src="https://pkg.go.dev/badge/github.com/harrisoncramer/ultra.svg" alt="Go Reference" /></a>
+  <a href="https://github.com/chariot-giving/ultra/actions/workflows/golang_ci.yml"><img src="https://github.com/chariot-giving/ultra/actions/workflows/golang_ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://pkg.go.dev/github.com/chariot-giving/ultra"><img src="https://pkg.go.dev/badge/github.com/chariot-giving/ultra.svg" alt="Go Reference" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" /></a>
 </p>
 
@@ -31,7 +31,7 @@ NOTE: This project is still under development. Expect breaking changes!
 1. Install the CLI:
 
 ```bash
-go install github.com/harrisoncramer/ultra/cmd/ultra@latest
+go install github.com/chariot-giving/ultra/cmd/ultra@latest
 ```
 
 2. Create a `config` package for each application using ultra:
